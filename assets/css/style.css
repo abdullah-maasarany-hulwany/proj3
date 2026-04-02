@@ -414,9 +414,9 @@ footer .navbar-nav li {
     margin-right: 8px;
 }
 .slide-new {
-    height: 320px;
+    height: 640px;
     overflow: hidden;
-    -webkit-line-clamp: 16;
+    -webkit-line-clamp: 32;
     display: -webkit-box;
     -webkit-box-orient: vertical;
 }
