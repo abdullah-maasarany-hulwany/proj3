@@ -70,7 +70,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                                <a class="nav-link active" aria-current="page" href="../index.html">الرئيسية</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="category.html">الحواسيب</a>
@@ -169,7 +169,12 @@
                         </div>
                         <div class="d-flex gap-1 add-btn">
                             <button class="btn btn-danger">اضافة الى السلة</button>
-                            <button class=" btn btn-success">شراء الان</button>
+
+
+                            <a href="checkout.html">
+                                <button class="btn btn-success "> شراء الان</button>
+                            </a>
+                            
                         </div>
                     </div>
 
@@ -645,7 +650,7 @@
                 <div class="col f2 mb-3 links">
                     <h3>أهم الروابط</h3>
                     <ul class="navbar-nav ">
-                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="../index.html">الرئيسية</a></li>
                         <li><a href="./cart.html">السلة</a></li>
                         <li><a href="./product.html">المنتجات</a></li>
                         <li><a href="./checkout.html">الشراء</a></li>
@@ -684,6 +689,109 @@
     </footer>
     <!-- end footer-->
 
+
+
+<!-- start modal -->
+    <!-- start quick view -->
+    <div class="modal fade" id="quick-products" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">سامسونغ s23</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="row row-cols-1 row-cols-md-2">
+                        <div class="col ">
+                            <img class="img-fluid" src="assets/image/products/7.jpg" alt="s23">
+                            <a href="assets/assets/product.html"><button class="btn btn-primary w-100">كافة التفاصيل</button></a>
+                        </div>
+                        <div class="col">
+                            <img width="40%" src="assets/image/samsung.png" alt="">
+                            <h1 class="modal-title fs-5 my-3"> لون فضي سامسونغ s23</h1>
+                            <p class="product-discription">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium tenetur
+                                tempora
+                                fuga consequuntur. Nam recusandae veniam amet! Obcaecati, nesciunt facere.
+                            </p>
+                            <div class="quick-reviews">
+                                <span>تقييمات المستخدمين :</span>
+                                <div class="stars mb-2 d-inline-flex mb-3">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+
+                                <div class="price mb-3">
+                                    <span>السعر 250$</span>
+                                    <span>السعر 400$</span>
+                                </div>
+
+                                <div class="btns d-flex gap-2">
+                                    <div class="btn-group btns-quantity">
+                                        <button class="btn ">+</button>
+                                        <button class="btn ">1</button>
+                                        <button class="btn ">-</button>
+                                    </div>
+                                    <div class="d-flex gap-1 add-btn">
+                                        <button class="btn btn-danger  " onclick="alert('تم اضافة المنتج بنجاح')"
+                                            data-bs-toggle="modal">اضافة الى السلة</button>
+                                        <a href="assets/checkout.html"><button class=" btn btn-success">شراء الان</button></a>
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <div class="category mb-3">
+                                    <span>التصنيفات:</span>
+                                    <a href="">جوالات السامسونغ</a>
+                                </div>
+
+                                <div class="share">
+                                    <span>المشاركة</span>
+                                    <div class="share-icons d-inline-flex gap-2">
+                                        <i class="fa-brands fa-facebook"></i>
+                                        <i class="fa-brands fa-whatsapp"></i>
+                                        <i class="fa-brands fa-instgram"></i>
+                                        <i class="fa-brands fa-twitter"></i>
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end quick view -->
+
+    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+        tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Hide this modal and show the first with the button below.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#quick-products" data-bs-toggle="modal">Back
+                        to first</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end-modal -->
+
+
+    
     <!-- start- offcanvas-->
     <!-- cart -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="cart" aria-labelledby="offcanvasExampleLabel">
